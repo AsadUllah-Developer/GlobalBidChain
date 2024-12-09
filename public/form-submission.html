@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Submission Form</title>
+    <!-- <link rel="stylesheet" href="submit.css"> -->
+    <style>
+        * {
+            margin: 10px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                
+                color: #000;
+            }
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .form-container {
+            background:
+                linear-gradient(175deg, rgba(116, 235, 213, 0.6), rgba(154, 252, 230, 0.6)),
+                url(bgsubmit.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 5px;
+            border-radius: 20px;
+            box-shadow: inset 1px -1px 100px 20px #607D8B;
+            width: 100%;
+            transition: transform 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        label {
+
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            font-size: 16px;
+            background-color: #cccccce8;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            transition: border 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border: 1px solid #286ea7;
+            box-shadow: 0 0 5px #286ea7;
+        }
+
+        textarea {
+            font-size: 18px;
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #295dca;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0026ff;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="/submit-product" method="POST" enctype="multipart/form-data" id="product-form">
+            <label for="product-name">Enter Product Name:</label>
+            <input type="text" id="product-name" name="product-name" placeholder="Type product name..." required>
+
+            <label for="categories">Related Categories:</label>
+            <select id="categories" name="categories" required>
+                <option value="">-- Select a category --</option>
+                <option value="electronics">Electronics</option>
+                <option value="mobile-phones">Mobile Phones</option>
+                <option value="accessories">Accessories</option>
+                <option value="fashion">Fashion</option>
+                <option value="footwear">Footwear</option>
+                <option value="home-appliances">Home Appliances</option>
+                <option value="kitchen">Kitchen</option>
+                <option value="large-appliances">Large Appliances</option>
+                <option value="books">Books</option>
+                <option value="education">Education</option>
+                <option value="stationery">Stationery</option>
+                <option value="health-beauty">Health & Beauty</option>
+                <option value="cosmetics">Cosmetics</option>
+                <option value="furniture">Furniture</option>
+                <option value="living-room">Living Room</option>
+                <option value="home-decor">Home Decor</option>
+                <option value="audio-equipment">Audio Equipment</option>
+                <option value="photography">Photography</option>
+                <option value="sports-outdoors">Sports & Outdoors</option>
+                <option value="fitness">Fitness</option>
+                <option value="transportation">Transportation</option>
+                <option value="home-entertainment">Home Entertainment</option>
+                <option value="wearables">Wearables</option>
+                <option value="household-items">Household Items</option>
+                <option value="cleaning-supplies">Cleaning Supplies</option>
+                <option value="cooking">Cooking</option>
+                <option value="fragrances">Fragrances</option>
+                <option value="personal-care">Personal Care</option>
+                <option value="outerwear">Outerwear</option>
+                <option value="winter-collection">Winter Collection</option>
+                <option value="gaming">Gaming</option>
+                <option value="office-supplies">Office Supplies</option>
+                <option value="bedroom">Bedroom</option>
+                <option value="pharmacy">Pharmacy</option>
+                <option value="health-wellness">Health & Wellness</option>
+                <option value="prescription-drugs">Prescription Drugs</option>
+                <option value="medical-supplies">Medical Supplies</option>
+                <option value="surgical-instruments">Surgical Instruments</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="medical-equipment">Medical Equipment</option>
+                <option value="diagnostics">Diagnostics</option>
+                <option value="mobility-aids">Mobility Aids</option>
+                <option value="personal-protective-equipment">Personal Protective Equipment</option>
+                <option value="antibiotics">Antibiotics</option>
+                <option value="pain-relief">Pain Relief</option>
+                <option value="over-the-counter">Over-the-Counter</option>
+                <option value="allergy">Allergy</option>
+                <option value="cardiovascular">Cardiovascular</option>
+                <option value="diabetes">Diabetes</option>
+                <option value="cold-cough">Cold & Cough</option>
+                <option value="gastrointestinal">Gastrointestinal</option>
+                <option value="topical-treatments">Topical Treatments</option>
+                <option value="antifungal">Antifungal</option>
+            </select>
+
+            <label for="product-unit">Unit of the product:</label>
+            <select id="product-unit" name="product-unit" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <!-- <option value="9">9</option> -->
+            </select>
+
+            <textarea id="product-description" placeholder="Description of the product:" name="product-description"
+                rows="4" required></textarea><br><br>
+
+            <label for="delivery-date">Delivery time of the product:</label>
+            <input type="datetime-local" id="delivery-date" name="delivery-date" required><br><br>
+
+            <input type="text" id="location" placeholder="Location of product to be delivered:" name="location"
+                required><br><br>
+
+            <label for="product-image">Upload picture of the product:</label>
+            <input type="file" id="product-image" name="product-image" accept="image/*" required><br><br>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const productCategories = {
+            "iphone": ["Electronics", "Mobile Phones", "Accessories"],
+            "laptop": ["Electronics", "Computers & Laptops", "Accessories"],
+            "shoes": ["Fashion", "Footwear", "Sports"],
+            "fridge": ["Home Appliances", "Kitchen", "Large Appliances"],
+            "book": ["Books", "Education", "Stationery"],
+            "makeup": ["Health & Beauty", "Cosmetics", "Personal Care"],
+            "sofa": ["Furniture", "Living Room", "Home Decor"],
+            "medicine": ["Pharmacy", "Health & Wellness", "Prescription Drugs"],
+            "syringe": ["Medical Supplies", "Surgical Instruments", "Healthcare"],
+            "iphone": ["Electronics", "Mobile Phones", "Accessories"],
+            "laptop": ["Electronics", "Computers & Laptops", "Accessories"],
+            "shoes": ["Fashion", "Footwear", "Sports"],
+            "fridge": ["Home Appliances", "Kitchen", "Large Appliances"],
+            "book": ["Books", "Education", "Stationery"],
+            "makeup": ["Health & Beauty", "Cosmetics", "Personal Care"],
+            "sofa": ["Furniture", "Living Room", "Home Decor"],
+            "headphones": ["Electronics", "Audio Equipment", "Music"],
+            "camera": ["Electronics", "Photography", "Accessories"],
+            "bicycle": ["Sports & Outdoors", "Fitness", "Transportation"],
+            "television": ["Electronics", "Home Entertainment", "Smart Devices"],
+            "watch": ["Fashion", "Accessories", "Wearables"],
+            "detergent": ["Groceries", "Household Items", "Cleaning Supplies"],
+            "microwave": ["Home Appliances", "Kitchen Appliances", "Cooking"],
+            "perfume": ["Health & Beauty", "Fragrances", "Personal Care"],
+            "yoga mat": ["Sports & Outdoors", "Fitness", "Health"],
+            "jacket": ["Fashion", "Outerwear", "Winter Collection"],
+            "gaming console": ["Electronics", "Gaming", "Entertainment"],
+            "printer": ["Electronics", "Office Supplies", "Computers"],
+            "bed": ["Furniture", "Bedroom", "Home Decor"],
+            "medicine": ["Pharmacy", "Health & Wellness", "Prescription Drugs"],
+            "syringe": ["Medical Supplies", "Surgical Instruments", "Healthcare"],
+            "bandage": ["Medical Supplies", "First Aid", "Healthcare"],
+            "scalpel": ["Surgical Instruments", "Healthcare", "Medical Equipment"],
+            "stethoscope": ["Medical Equipment", "Healthcare", "Diagnostics"],
+            "gloves": ["Medical Supplies", "Surgical Instruments", "Healthcare"],
+            "mask": ["Medical Supplies", "Personal Protective Equipment", "Healthcare"],
+            "thermometer": ["Medical Equipment", "Healthcare", "Diagnostics"],
+            "antibiotic": ["Pharmacy", "Prescription Drugs", "Health & Wellness"],
+            "ointment": ["Pharmacy", "Topical Treatments", "Health & Beauty"],
+            "wheelchair": ["Medical Equipment", "Mobility Aids", "Healthcare"],
+            "surgical mask": ["Medical Supplies", "Surgical Instruments", "Healthcare"],
+            "scissors": ["Surgical Instruments", "Medical Supplies", "Healthcare"],
+            "crutches": ["Medical Equipment", "Mobility Aids", "Healthcare"],
+            "blood pressure monitor": ["Medical Equipment", "Diagnostics", "Healthcare"],
+            "amoxicillin": ["Pharmacy", "Antibiotics", "Prescription Drugs"],
+            "ciprofloxacin": ["Pharmacy", "Antibiotics", "Prescription Drugs"],
+            "azithromycin": ["Pharmacy", "Antibiotics", "Prescription Drugs"],
+            "ibuprofen": ["Pharmacy", "Pain Relief", "Over-the-Counter"],
+            "acetaminophen": ["Pharmacy", "Pain Relief", "Over-the-Counter"],
+            "aspirin": ["Pharmacy", "Pain Relief", "Over-the-Counter"],
+            "loratadine": ["Pharmacy", "Allergy", "Over-the-Counter"],
+            "cetirizine": ["Pharmacy", "Allergy", "Over-the-Counter"],
+            "fexofenadine": ["Pharmacy", "Allergy", "Prescription Drugs"],
+            "atorvastatin": ["Pharmacy", "Cardiovascular", "Prescription Drugs"],
+            "metoprolol": ["Pharmacy", "Cardiovascular", "Prescription Drugs"],
+            "amlodipine": ["Pharmacy", "Cardiovascular", "Prescription Drugs"],
+            "metformin": ["Pharmacy", "Diabetes", "Prescription Drugs"],
+            "glipizide": ["Pharmacy", "Diabetes", "Prescription Drugs"],
+            "insulin": ["Pharmacy", "Diabetes", "Prescription Drugs"],
+            "dextromethorphan": ["Pharmacy", "Cold & Cough", "Over-the-Counter"],
+            "guaifenesin": ["Pharmacy", "Cold & Cough", "Over-the-Counter"],
+            "pseudoephedrine": ["Pharmacy", "Cold & Cough", "Prescription Drugs"],
+            "omeprazole": ["Pharmacy", "Gastrointestinal", "Over-the-Counter"],
+            "loperamide": ["Pharmacy", "Gastrointestinal", "Over-the-Counter"],
+            "famotidine": ["Pharmacy", "Gastrointestinal", "Over-the-Counter"],
+            "hydrocortisone": ["Pharmacy", "Topical Treatments", "Over-the-Counter"],
+            "mupirocin": ["Pharmacy", "Topical Treatments", "Prescription Drugs"],
+            "clotrimazole": ["Pharmacy", "Topical Treatments", "Antifungal"]
+
+        };
+        productNameInput.addEventListener("input", function () {
+            const productName = productNameInput.value.toLowerCase();
+            const allOptions = Array.from(categoriesSelect.options);
+
+            // Hide all options initially
+            allOptions.forEach(option => option.style.display = "none");
+            categoriesSelect.value = "";  // Reset selection
+
+            let matchFound = false;
+
+            // Check if the product name matches any key in the productCategories object
+            for (let key in productCategories) {
+                if (productName.includes(key)) {
+                    matchFound = true;
+                    productCategories[key].forEach(category => {
+                        const matchedOption = allOptions.find(opt => opt.value === category.toLowerCase());
+                        if (matchedOption) matchedOption.style.display = "block";
+                    });
+                    break;
+                }
+            }
+
+            // If no match is found, show all categories
+            if (!matchFound) {
+                allOptions.forEach(option => option.style.display = "block");
+            }
+        });
+
+    </script>
+</body>
+
+</html>
