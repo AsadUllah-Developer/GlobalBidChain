@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Buying Offer</title>
+    <!-- Link to the CSS File -->
+    <link rel="stylesheet" href="../CSS/bidsubmitting.css">
+</head>
+<body>
+    <!-- Form Section -->
+<section class="form-section">
+    <h2>Post Your Buying Offer</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Search Category -->
+        <label for="searchCategory">Search Category</label>
+        <input type="text" id="searchCategory" name="searchCategory" placeholder="Search Category" required>
+
+        <!-- Select Category -->
+        <label for="category">Or select category from the list below:</label>
+        <select id="category" name="category" required>
+            <option value="">--Select Category--</option>
+            <option>Agriculture</option>
+            <option>Apparel & Clothing</option>
+            <option>Automobiles</option>
+            <option>Beauty & Personal Care</option>
+            <option>Business Services</option>
+            <option>Chemicals</option>
+            <option>Computer Hardware & Software</option>
+            <option>Construction & Real Estate</option>
+            <option>Consumer Electronics</option>
+            <option>Electrical & Electronics Supplies</option>
+            <option>Energy Products</option>
+            <option>Environment</option>
+            <option>Fashion Accessories</option>
+            <option>Food & Beverage</option>
+            <option>Furniture</option>
+            <option>Gifts & Crafts</option>
+            <option>Health & Medicines</option>
+            <option>Home & Garden</option>
+            <option>Industrial Machinery</option>
+            <option>Jewelry & Watches</option>
+            <option>Lights & Lighting</option>
+            <option>Office & School Supplies</option>
+            <option>Textile & Leather Products</option>
+            <option>Transportation</option>
+            <option>Other</option>
+        </select>
+
+        <!-- Buy Offer Title -->
+        <label for="offerTitle">*Buy Offer Title</label>
+        <input type="text" id="offerTitle" name="offerTitle" placeholder="Enter your offer title" required>
+
+        <!-- Detailed Description -->
+        <label for="description">*Detailed Description</label>
+        <textarea id="description" name="description" rows="5" placeholder="Min 50 characters" minlength="50" maxlength="2000" required></textarea>
+
+        <!-- Attach Images -->
+        <label for="fileUpload">Attach Images</label>
+        <input type="file" id="fileUpload" name="fileUpload" accept=".doc,.docx,.pdf,.png,.jpg,.gif" required>
+
+        <!-- Time of Validity -->
+        <label for="validity">*Time of Validity</label>
+        <select id="validity" name="validity" required>
+            <option value="1 Month">1 Month</option>
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+            <option value="12 Months">12 Months</option>
+        </select>
+
+        <!-- Buying Frequency -->
+        <label for="frequency">*Buying Frequency</label>
+        <select id="frequency" name="frequency" required>
+            <option value="">--Select Frequency--</option>
+            <option>One-Time</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Yearly</option>
+        </select>
+
+        <!-- Quantity & Units -->
+        <label for="quantity">Quantity Required</label>
+        <input type="number" id="quantity" name="quantity" min="0" placeholder="0">
+
+        <label for="unit">Select Unit</label>
+        <select id="unit" name="unit">
+            <option>Pieces</option>
+            <option>Kilograms</option>
+            <option>Liters</option>
+            <option>Boxes</option>
+            <option>Other</option>
+        </select>
+
+        <!-- Shipping Terms -->
+        <label for="shippingTerms">Shipping Terms</label>
+        <input type="text" id="shippingTerms" name="shippingTerms" placeholder="Enter Shipping Terms">
+
+        <label for="destinationPort">Destination Port</label>
+        <input type="text" id="destinationPort" name="destinationPort" placeholder="Enter Destination Port">
+
+        <!-- Contact Preference -->
+        <label>*Contact Preference</label>
+        <input type="radio" name="contactPreference" value="Paid Members" required> Only paid members can contact me.
+        <input type="radio" name="contactPreference" value="All Members"> Allow all members to contact me.
+
+        <!-- Personal Information -->
+        <h3>Personal Information</h3>
+        <label for="contactName">*Contact Name</label>
+        <input type="text" id="contactName" name="contactName" placeholder="Your Name" required>
+
+        <label for="businessAddress">*Business Address</label>
+        <input type="text" id="businessAddress" name="businessAddress" placeholder="Your Business Address" required>
+
+        <label for="companyName">*Company Name</label>
+        <input type="text" id="companyName" name="companyName" placeholder="Company Name" required>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="">- Select -</option>
+            <option>Pakistan</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Other</option>
+        </select>
+
+        <label for="email">*Reply Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="contactNumber">*Contact Number</label>
+        <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter contact number" required>
+
+        <label>
+            <input type="checkbox" name="newsletter"> I would like to receive personalized advice.
+        </label>
+
+        <!-- Submit Button -->
+        <button type="submit">Post it now</button>
+    </form>
+</section>
+
+</body>
+</html>
 
