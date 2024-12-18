@@ -45,34 +45,47 @@ assets/: Contains styles, scripts, and images for the platform.
 backend/: [API endpoints for managing bids, DID authentication, and notifications].
 README.md: Repository documentation.
 
-Explanation of Each Directory/File
-.github/
+**Explanation of Each Directory/File**
 
-Workflows: Automate tasks like testing, deployment, or code linting using GitHub Actions.
-Issue Templates: Help contributors write structured bug reports or feature requests.
-Pull Request Templates: Make sure PRs follow a specific format.
-assets/
+**.github/**
+
+**Workflows:** Automate tasks like testing, deployment, or code linting using GitHub Actions.
+**Issue Templates:** Help contributors write structured bug reports or feature requests.
+**Pull Request Templates:** Make sure PRs follow a specific format.
+
+
+**assets/**
 
 Keep all images, icons, and fonts in one place to maintain organization.
-src/
 
-css/: Holds all your stylesheets.
-js/: Contains all JavaScript functionality.
-html/: Keep HTML files organized, such as index.html (homepage) and form.html (bid form).
-components/: Modular and reusable HTML elements like navigation bars or footers.
-docs/
 
-README.md: High-level project overview (mandatory).
-CONTRIBUTING.md: Guidelines for contributors.
-CODE_OF_CONDUCT.md: Define behavior expectations.
-LICENSE: Your licensing details.
-tests/
+**src/**
+
+**css/:** Holds all your stylesheets.
+**js/:** Contains all JavaScript functionality.
+**html/:** Keep HTML files organized, such as index.html (homepage) and form.html (bid form).
+**components/:** Modular and reusable HTML elements like navigation bars or footers.
+
+
+**docs/**
+
+**README.md:** High-level project overview (mandatory).
+**CONTRIBUTING.md:** Guidelines for contributors.
+**CODE_OF_CONDUCT.md:** Define behavior expectations.
+**LICENSE:** Your licensing details.
+
+
+**tests/**
 
 For unit tests, integration tests, or other forms of testing.
-.gitignore
+
+
+**.gitignore**
 
 Ignore files like node_modules/, .env, or other unnecessary files from being tracked by Git.
-README.md
+
+
+**README.md**
 
 This file is essential as it introduces your project. Include:
 Project title
