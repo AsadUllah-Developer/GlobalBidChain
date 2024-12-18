@@ -1,7 +1,8 @@
 <img width="960" alt="B2B Model" src="https://github.com/user-attachments/assets/62b78458-c317-4392-b34b-802fc5f8f20c" />
 
 
-B2B Platform for Buyers and Sellers
+**B2B Platform for Buyers and Sellers**
+
 This repository hosts the source code for an innovative Business-to-Business (B2B) platform designed to connect buyers and sellers securely and efficiently. The platform leverages Decentralized Identifier (DID) technology alongside bid technology to ensure user privacy, authentication, and trust in every transaction.
 
 **Features**
