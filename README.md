@@ -39,52 +39,6 @@ assets/: Contains styles, scripts, and images for the platform.
 backend/: [API endpoints for managing bids, DID authentication, and notifications].
 README.md: Repository documentation.
 
-Repository final structure QuickBusinessPlatform/
-│
-├── .github/                   # GitHub-specific workflows, templates, and actions
-│   ├── workflows/             # GitHub Actions for CI/CD
-│   │   └── main.yml           # Example GitHub Action file
-│   ├── ISSUE_TEMPLATE/        # Templates for issues
-│   │   └── bug_report.md      # Bug report template
-│   └── PULL_REQUEST_TEMPLATE.md # Pull request template
-│
-├── assets/                    # Static assets like images, icons, and fonts
-│   ├── images/                # Project images (logos, backgrounds, etc.)
-│   ├── icons/                 # Icons (SVGs, PNGs)
-│   └── fonts/                 # Fonts used in the project
-│
-├── src/                       # Source code directory
-│   ├── css/                   # CSS stylesheets
-│   │   ├── bidsubmitting.css  # Main CSS file for bidding form
-│   │   └── styles.css         # General project styles
-│   │
-│   ├── js/                    # JavaScript files
-│   │   ├── main.js            # Core JavaScript functionality
-│   │   └── bidsubmitting.js   # JS for bid submitting form
-│   │
-│   ├── html/                  # HTML files
-│   │   ├── index.html         # Homepage
-│   │   └── form.html          # Bid submitting form page
-│   │
-│   └── components/            # Reusable UI components (optional)
-│       ├── navbar.html        # Navigation bar
-│       └── footer.html        # Footer
-│
-├── docs/                      # Project documentation
-│   ├── README.md              # Project overview
-│   ├── CONTRIBUTING.md        # How to contribute to the project
-│   ├── CODE_OF_CONDUCT.md     # Code of conduct for contributors
-│   └── LICENSE                # Licensing information
-│
-├── tests/                     # Unit tests or other tests (if any)
-│   ├── test_main.js           # Example test for JS code
-│   └── test_form.js           # Test for form functionality
-│
-├── .gitignore                 # Specifies files for Git to ignore
-├── package.json               # Package configuration (if using npm or yarn)
-├── LICENSE                    # License for the project
-└── README.md                  # Main project documentation
-
 Explanation of Each Directory/File
 .github/
 
