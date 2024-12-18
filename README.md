@@ -10,6 +10,8 @@ This repository hosts the source code for an innovative Business-to-Business (B2
 Enables secure, decentralized identification for both buyers and sellers, eliminating the need for centralized user data storage.
 Ensures privacy and enhances trust by providing verifiable credentials for all platform users.
 Allows sellers to verify buyers' identities and vice versa without exposing sensitive information.
+
+
 **Bid Technology:**
 
 A real-time system where buyers submit bids (product requests) and sellers respond with offers.
