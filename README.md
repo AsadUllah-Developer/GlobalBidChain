@@ -4,32 +4,36 @@
 B2B Platform for Buyers and Sellers
 This repository hosts the source code for an innovative Business-to-Business (B2B) platform designed to connect buyers and sellers securely and efficiently. The platform leverages Decentralized Identifier (DID) technology alongside bid technology to ensure user privacy, authentication, and trust in every transaction.
 
-Features
-DID Technology Integration:
+**Features**
+**DID Technology Integration**:
+
 Enables secure, decentralized identification for both buyers and sellers, eliminating the need for centralized user data storage.
 Ensures privacy and enhances trust by providing verifiable credentials for all platform users.
 Allows sellers to verify buyers' identities and vice versa without exposing sensitive information.
-Bid Technology:
+**Bid Technology:**
+
 A real-time system where buyers submit bids (product requests) and sellers respond with offers.
 Categorized notifications ensure only relevant sellers receive bid alerts.
 A matching algorithm prioritizes offers based on criteria like price, response time, and reliability.
-User Roles:
-Buyers: Post product requests, review seller offers, and finalize deals.
-Sellers: Receive notifications, submit competitive offers, and communicate with buyers directly.
-Real-Time Notifications: Ensures sellers are promptly informed of new bids via an efficient notification system inspired by social media platforms.
-Messaging System: Secure, encrypted communication between buyers and sellers for deal negotiations.
-Customizable Header: Includes menus for:
+**User Roles:**
+
+**Buyers:** Post product requests, review seller offers, and finalize deals.
+**Sellers:** Receive notifications, submit competitive offers, and communicate with buyers directly.
+**Real-Time Notifications:** Ensures sellers are promptly informed of new bids via an efficient notification system inspired by social media platforms.
+**Messaging System:** Secure, encrypted communication between buyers and sellers for deal negotiations.
+**Customizable Header:** Includes menus for:
 Bid Submission
 Notifications
 Buyer/Seller Dashboard
 Messaging
 Account Management
-Global Scalability: Built for businesses worldwide, supporting multiple industries and product categories.
+**Global Scalability:** Built for businesses worldwide, supporting multiple industries and product categories.
 Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: [Express.js, Mongo DB,  Node.js]
-Database: [MongoDB]
-DID Technology: Based on decentralized identity standards such as W3C Decentralized Identifiers and Verifiable Credentials.
+**Frontend:** HTML, CSS, JavaScript
+**Backend:** [Express.js, Mongo DB,  Node.js]
+**Database:** [MongoDB]
+
+**DID Technology:** Based on decentralized identity standards such as W3C Decentralized Identifiers and Verifiable Credentials.
 Hosting: [ AWS, Heroku, DigitalOcean/ can be choosen later on]
 Version Control: Git and GitHub for collaboration and versioning.
 File Structure
@@ -79,7 +83,7 @@ License
 
 
 
-DID Technology Overview
+**DID Technology Overview**
 The platform leverages DID technology to enhance security and privacy:
 
 Decentralized Identification:
