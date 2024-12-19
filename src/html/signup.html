@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer/seller joining page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/b2bsignup.css">
+    </head>
+ <body>
+   <div id="container">
+      <form action="#" id="joining-form">
+        <h1 class="heading">Welcome to Our B2B Platform</h1>
+          <p>Connect with buyers and sellers seamlessly.</p>
+             <div class="radio-btn">
+                <label>I am a:</label>
+                  <input type="radio" id="buyer-top" name="role-top" value="buyer">
+                    <label for="buyer-top">Buyer</label>
+                  <input type="radio" id="seller-top" name="role-top" value="seller">
+                <label for="seller-top">Seller</label>
+             <input type="radio" id="both-top" name="role-top" value="both">
+          <label for="both-top">Both</label>
+       </div>
+    <div class="left-column">
+         <div class="input-group">
+             <span><i class="fas fa-user"></i></span>
+                  <label for="first-name">First Name</label>
+             <input type="text" id="first-name" name="first_name" placeholder="Enter first name" required>
+        </div>
+     <div class="input-group">
+          <span><i class="fas fa-user"></i></span>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" placeholder="Enter last name" required>
+        </div>
+    </div>
+
+    <div class="left-column">
+         <div class="input-group">
+             <span><i class="fas fa-building"></i></span>
+                 <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company_name" placeholder="Company Name" required>
+     </div>
+
+        <div class="input-group">
+              <span><i class="fas fa-box"></i></span>
+                    <label for="product-detail">Product Detail</label>
+              <input type="text" id="product-detail" name="product_detail" placeholder="Enter product details" required>
+          </div>
+       </div>
+    <div class="left-column">
+        <div class="input-group">
+               <span><i class="fas fa-envelope"></i></span>
+                     <label for="email">Email</label>
+               <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+        <div class="input-group">
+               <span><i class="fas fa-lock"></i></span>
+                   <label for="password">Password</label>
+             <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+    </div>
+    <div class="left-column">
+        <div class="input-group">
+            <span><i class="fas fa-globe"></i></span>
+                <label for="country">Country</label>
+                  <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                  <option value="us">United States</option>
+                <option value="ca">Canada</option>
+             <option value="gb">United Kingdom</option>
+         <option value="au">Australia</option>
+      <option value="in">Pakistan</option>
+  <option value="tr">Turkey</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <!-- <span><i class="fas fa-phone"></i></span> -->
+            <label for="mobile-number">Mobile Number</label>
+            <div class="contact-container">
+                <!-- <input type="tel" id="country-code" name="country_code" placeholder="+1" required> -->
+                <select class="countrycode" name="countryCode" id="country-code">
+                    <option value="+1">+1 (USA)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+91">+92 (Pakistan)</option>
+                    <option value="+61">+61 (Australia)</option>
+                    <option value="+81">+81 (Japan)</option>
+                    
+                  </select>
+                <input type="tel" id="mobile-number" name="mobile_number" placeholder="Enter mobile number"  required>
+            </div>
+        </div>
+    </div>
+<button type="submit">Sign Up</button>   
+          <p class="login-link">Already have an account? <a href="signin.html">Log in</a></p>
+    </form>
+</div>
+</body>
+</html>
